@@ -4,7 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "EssayRight | Clear Thinking. Authentic Voice. Writing That Matters.",
   description:
-    "EssayRight helps students craft original, persuasive writing for college admissions, academic work, and graduate study. Expert essay coaching and writing mentorship in the age of AI.",
+    "EssayRight helps students and professionals craft original, persuasive writing for admissions, academic work, and professional goals. Expert writing mentorship in the age of AI.",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   keywords: [
     "essay coaching",
     "college admissions essays",

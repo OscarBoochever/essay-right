@@ -3,11 +3,12 @@
 import { useState } from "react";
 
 const links = [
-  { href: "#about-essayright", label: "About" },
+  { href: "#about-essayright", label: "Why Us" },
   { href: "#services", label: "Services" },
   { href: "#method", label: "The Method" },
   { href: "#who-we-help", label: "Who We Help" },
   { href: "#john", label: "About John" },
+  { href: "#testimonials", label: "Testimonials" },
 ];
 
 export default function Nav() {

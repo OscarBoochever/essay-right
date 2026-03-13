@@ -76,7 +76,7 @@ export default function WhoWeHelp() {
           {audiences.map((audience) => (
             <div
               key={audience.title}
-              className="bg-cream rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-cream rounded-2xl p-7 shadow-sm hover:shadow-md transition-shadow"
             >
               <h3 className="font-serif text-lg font-semibold text-navy mb-4">
                 {audience.title}
