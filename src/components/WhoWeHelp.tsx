@@ -1,5 +1,15 @@
 const audiences = [
   {
+    title: "Middle School Students",
+    items: [
+      "Competitive school applications",
+      "Building strong writing habits",
+      "Essays & school assignments",
+      "Finding a confident voice early",
+    ],
+    accent: "bg-coral",
+  },
+  {
     title: "High School Students",
     items: [
       "College admissions essays",
@@ -30,7 +40,17 @@ const audiences = [
     accent: "bg-gold",
   },
   {
-    title: "International Students",
+    title: "Professionals",
+    items: [
+      "Job applications & cover letters",
+      "CVs & resumes",
+      "Framing experience & narrative",
+      "Reports & work deliverables",
+    ],
+    accent: "bg-teal-dark",
+  },
+  {
+    title: "International Voices",
     items: [
       "English academic voice",
       "Admissions essays",
@@ -49,16 +69,15 @@ export default function WhoWeHelp() {
           Who We Help
         </h2>
         <p className="text-center text-navy/60 max-w-2xl mx-auto mb-16 text-lg">
-          From middle school to PhD programs, EssayRight works with students at
-          every stage of their academic journey.
+          From middle school to PhD programs and beyond, EssayRight works with
+          writers at every stage of their academic or professional journeys.
         </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {audiences.map((audience) => (
             <div
               key={audience.title}
               className="bg-cream rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className={`w-3 h-3 rounded-full ${audience.accent} mb-5`} />
               <h3 className="font-serif text-lg font-semibold text-navy mb-4">
                 {audience.title}
               </h3>

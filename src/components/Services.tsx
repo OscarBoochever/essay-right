@@ -1,8 +1,8 @@
 const services = [
   {
-    title: "College Admissions Essays",
+    title: "Admissions Essays",
     description:
-      "Personal statements, supplemental essays, and scholarship applications. We uncover your story, clarify the message, and refine the prose until it stands out.",
+      "Personal statements, supplemental essays, and scholarship applications for high school, college, and graduate programs. We uncover your story, clarify the message, and refine the prose until it stands out.",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" />
@@ -20,9 +20,9 @@ const services = [
     ),
   },
   {
-    title: "Graduate & Professional School",
+    title: "Applications",
     description:
-      "Statements of purpose, research statements, fellowship and grant applications. Craft an intellectual narrative that persuades admissions committees.",
+      "Graduate school, fellowships, grants, jobs, and internships. Craft a compelling narrative that persuades selection committees and hiring managers.",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
@@ -40,9 +40,9 @@ const services = [
     ),
   },
   {
-    title: "International Students",
+    title: "International Voices",
     description:
-      "English-language academic voice, clarity of argument, and cultural tone for admissions essays and coursework. Bridge the gap with confidence.",
+      "English-language voice, clarity of argument, and cultural tone for admissions essays, academic work, and professional documents. Bridge the gap with confidence.",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5a17.92 17.92 0 0 1-8.716-2.247m0 0A8.966 8.966 0 0 1 3 12c0-1.264.26-2.467.73-3.563" />
@@ -52,7 +52,7 @@ const services = [
   {
     title: "Professional Writing",
     description:
-      "Cover letters, personal bios, professional statements, and other high-stakes documents where every word counts.",
+      "Reports, presentations, strategic deliverables, cover letters, CVs, personal bios, and career narratives. Writing that performs at the highest level.",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75a23.978 23.978 0 0 1-7.577-1.22 2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.11 48.11 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0" />
@@ -70,7 +70,7 @@ export default function Services() {
         </h2>
         <p className="text-center text-navy/60 max-w-2xl mx-auto mb-16 text-lg">
           Writing mentorship, not just editing. Every engagement is built around
-          the student&apos;s goals, voice, and timeline.
+          your goals, voice, and timeline.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service) => (

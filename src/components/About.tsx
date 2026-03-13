@@ -14,6 +14,8 @@ export default function About() {
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 40vw"
+                quality={100}
+                unoptimized
               />
             </div>
           </div>
@@ -62,6 +64,19 @@ export default function About() {
                 Cornell&apos;s College of Arts & Sciences. His board service has
                 included Higher Achievement, Sidwell Friends School, and other
                 educational organizations.
+              </p>
+              <p>
+                On a more personal note: John has been editing his three
+                children&apos;s writing since grade school. Between them, they have
+                collected one PhD, four master&apos;s degrees, and three
+                bachelor&apos;s degrees across Cornell, Harvard, UC Davis, the
+                University of Vermont, and Lipscomb University. He takes partial
+                credit for the essays.
+              </p>
+              <p>
+                Beyond his own family, John has helped two generations of young
+                management consultants become better business writers, and has
+                coached applicants for fellowships, grants, and board roles.
               </p>
               <p>
                 He holds advanced degrees from the Johns Hopkins School of

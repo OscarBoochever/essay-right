@@ -8,7 +8,6 @@ const links = [
   { href: "#method", label: "The Method" },
   { href: "#who-we-help", label: "Who We Help" },
   { href: "#john", label: "About John" },
-  { href: "#contact", label: "Get Started" },
 ];
 
 export default function Nav() {

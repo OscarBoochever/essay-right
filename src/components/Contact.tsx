@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [contactError, setContactError] = useState(false);
 
   return (
     <section id="contact" className="py-20 md:py-28 px-6 bg-white">
@@ -39,33 +40,46 @@ export default function Contact() {
                 e.preventDefault();
                 const form = e.target as HTMLFormElement;
                 const data = new FormData(form);
-                // Send email via mailto as a simple starting point
                 const name = data.get("name");
-                const email = data.get("email");
+                const email = data.get("email") as string;
+                const phone = data.get("phone") as string;
                 const service = data.get("service");
                 const message = data.get("message");
-                window.location.href = `mailto:boocheverjohn@gmail.com?subject=EssayRight Inquiry from ${name}&body=Name: ${name}%0AEmail: ${email}%0AService Interest: ${service}%0A%0A${message}`;
+
+                if (!email.trim() && !phone.trim()) {
+                  setContactError(true);
+                  return;
+                }
+                setContactError(false);
+
+                const contactInfo = [
+                  email ? `Email: ${email}` : "",
+                  phone ? `Phone: ${phone}` : "",
+                ].filter(Boolean).join("%0A");
+
+                window.location.href = `mailto:boocheverjohn@gmail.com?subject=EssayRight Inquiry from ${name}&body=Name: ${name}%0A${contactInfo}%0AService Interest: ${service}%0A%0A${message}`;
                 setSubmitted(true);
               }}
               className="space-y-6"
             >
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-navy mb-2"
+                >
+                  Name <span className="text-coral">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  className="w-full px-4 py-3 rounded-xl border border-navy/10 bg-white text-navy placeholder:text-navy/30 focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors"
+                  placeholder="Your name"
+                />
+              </div>
+
               <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium text-navy mb-2"
-                  >
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    className="w-full px-4 py-3 rounded-xl border border-navy/10 bg-white text-navy placeholder:text-navy/30 focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors"
-                    placeholder="Your name"
-                  />
-                </div>
                 <div>
                   <label
                     htmlFor="email"
@@ -77,12 +91,33 @@ export default function Contact() {
                     type="email"
                     id="email"
                     name="email"
-                    required
-                    className="w-full px-4 py-3 rounded-xl border border-navy/10 bg-white text-navy placeholder:text-navy/30 focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors"
+                    onChange={() => contactError && setContactError(false)}
+                    className={`w-full px-4 py-3 rounded-xl border bg-white text-navy placeholder:text-navy/30 focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors ${contactError ? "border-coral" : "border-navy/10"}`}
                     placeholder="your@email.com"
                   />
                 </div>
+                <div>
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-navy mb-2"
+                  >
+                    Phone
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    onChange={() => contactError && setContactError(false)}
+                    className={`w-full px-4 py-3 rounded-xl border bg-white text-navy placeholder:text-navy/30 focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors ${contactError ? "border-coral" : "border-navy/10"}`}
+                    placeholder="(555) 555-5555"
+                  />
+                </div>
               </div>
+              {contactError && (
+                <p className="text-coral text-sm -mt-4">
+                  Please provide an email address or phone number.
+                </p>
+              )}
 
               <div>
                 <label
@@ -94,18 +129,26 @@ export default function Contact() {
                 <select
                   id="service"
                   name="service"
-                  className="w-full px-4 py-3 rounded-xl border border-navy/10 bg-white text-navy focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors"
+                  defaultValue=""
+                  onChange={(e) => {
+                    e.target.classList.toggle("text-navy/30", e.target.value === "");
+                    e.target.classList.toggle("text-navy", e.target.value !== "");
+                  }}
+                  className="w-full px-4 py-3 rounded-xl border border-navy/10 bg-white text-navy/30 focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors"
                 >
-                  <option value="College Admissions Essays">
-                    College Admissions Essays
+                  <option value="" disabled>
+                    Select a service...
+                  </option>
+                  <option value="Admissions Essays">
+                    Admissions Essays
                   </option>
                   <option value="Academic Writing">Academic Writing</option>
-                  <option value="Graduate & Professional School">
-                    Graduate & Professional School
+                  <option value="Applications">
+                    Applications
                   </option>
                   <option value="Writing Coaching">Writing Coaching</option>
-                  <option value="International Student Support">
-                    International Student Support
+                  <option value="International Voices">
+                    International Voices
                   </option>
                   <option value="Professional Writing">
                     Professional Writing
@@ -119,11 +162,12 @@ export default function Contact() {
                   htmlFor="message"
                   className="block text-sm font-medium text-navy mb-2"
                 >
-                  Tell us a bit about your goals
+                  Tell us a bit about your goals <span className="text-coral">*</span>
                 </label>
                 <textarea
                   id="message"
                   name="message"
+                  required
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl border border-navy/10 bg-white text-navy placeholder:text-navy/30 focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors resize-none"
                   placeholder="What are you working on? What's the timeline?"
@@ -152,6 +196,9 @@ export default function Contact() {
           </p>
           <p className="text-navy/40 text-sm mt-2">
             In-person in the Washington, D.C. area or virtual anywhere.
+          </p>
+          <p className="text-navy/40 text-sm mt-2">
+            Need-based financial aid is available. Just ask.
           </p>
         </div>
       </div>
