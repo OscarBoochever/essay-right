@@ -18,7 +18,7 @@ export default function Testimonials() {
             >
               <div className="text-teal text-3xl font-serif mb-4">&ldquo;</div>
               <p className="text-navy/40 italic leading-relaxed text-sm mb-6">
-                Testimonial placeholder — student and parent quotes will go
+                Testimonial placeholder. Student and parent quotes will go
                 here.
               </p>
               <div className="flex items-center gap-3">

@@ -10,7 +10,7 @@ export default function Hero() {
         </h1>
         <p className="mt-8 text-lg md:text-xl text-navy/70 max-w-2xl mx-auto leading-relaxed">
           EssayRight helps students craft original, persuasive writing for
-          college admissions, academic work, and graduate study — in an age
+          college admissions, academic work, and graduate study, especially in an age
           when authentic voice matters more than ever.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
