@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+:root {
+  --cream: #FDF8F3;
+  --navy: #1B2A4A;
+  --teal: #2B9EA1;
+  --teal-dark: #237B7E;
+  --coral: #E8734A;
+  --coral-dark: #D4603A;
+  --gold: #F5C542;
+  --light-teal: #E8F6F6;
+  --light-coral: #FEF0EB;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-navy: var(--navy);
+  --color-teal: var(--teal);
+  --color-teal-dark: var(--teal-dark);
+  --color-coral: var(--coral);
+  --color-coral-dark: var(--coral-dark);
+  --color-gold: var(--gold);
+  --color-light-teal: var(--light-teal);
+  --color-light-coral: var(--light-coral);
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--navy);
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--teal);
+  color: white;
+}

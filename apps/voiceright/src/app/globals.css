@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+:root {
+  --cream: #FDF8F3;
+  --navy: #1B2A4A;
+  --deep-blue: #2B4A8E;
+  --deep-blue-dark: #1E3A6F;
+  --amber: #D4950A;
+  --amber-dark: #B57E08;
+  --gold: #F5C542;
+  --light-blue: #EBF0FA;
+  --light-amber: #FEF5E0;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-navy: var(--navy);
+  --color-deep-blue: var(--deep-blue);
+  --color-deep-blue-dark: var(--deep-blue-dark);
+  --color-amber: var(--amber);
+  --color-amber-dark: var(--amber-dark);
+  --color-gold: var(--gold);
+  --color-light-blue: var(--light-blue);
+  --color-light-amber: var(--light-amber);
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--navy);
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--deep-blue);
+  color: white;
+}
