@@ -4,7 +4,9 @@ import { useState } from "react";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [contactError, setContactError] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   return (
     <section id="contact" className="py-20 md:py-28 px-6 bg-white">
@@ -36,29 +38,41 @@ export default function Contact() {
             </div>
           ) : (
             <form
-              onSubmit={(e) => {
+              onSubmit={async (e) => {
                 e.preventDefault();
                 const form = e.target as HTMLFormElement;
                 const data = new FormData(form);
-                const name = data.get("name");
                 const email = data.get("email") as string;
                 const phone = data.get("phone") as string;
-                const service = data.get("service");
-                const message = data.get("message");
 
                 if (!email.trim() && !phone.trim()) {
                   setContactError(true);
                   return;
                 }
                 setContactError(false);
+                setSubmitError(false);
+                setSubmitting(true);
 
-                const contactInfo = [
-                  email ? `Email: ${email}` : "",
-                  phone ? `Phone: ${phone}` : "",
-                ].filter(Boolean).join("%0A");
+                data.append("access_key", "f2d3e4b1-4757-490b-83d9-8c8c6816c960");
+                data.append("subject", `EssayRight Inquiry from ${data.get("name")}`);
+                data.append("from_name", "EssayRight Contact Form");
 
-                window.location.href = `mailto:boocheverjohn@gmail.com?subject=EssayRight Inquiry from ${name}&body=Name: ${name}%0A${contactInfo}%0AService Interest: ${service}%0A%0A${message}`;
-                setSubmitted(true);
+                try {
+                  const res = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    body: data,
+                  });
+                  const result = await res.json();
+                  if (result.success) {
+                    setSubmitted(true);
+                  } else {
+                    setSubmitError(true);
+                  }
+                } catch {
+                  setSubmitError(true);
+                } finally {
+                  setSubmitting(false);
+                }
               }}
               className="space-y-6"
             >
@@ -165,11 +179,18 @@ export default function Contact() {
                 />
               </div>
 
+              {submitError && (
+                <p className="text-coral text-sm">
+                  Something went wrong. Please try again or email directly.
+                </p>
+              )}
+
               <button
                 type="submit"
-                className="w-full bg-teal text-white font-semibold py-4 rounded-full text-lg hover:bg-teal-dark transition-colors shadow-lg shadow-teal/20"
+                disabled={submitting}
+                className="w-full bg-teal text-white font-semibold py-4 rounded-full text-lg hover:bg-teal-dark transition-colors shadow-lg shadow-teal/20 disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Schedule a Free Consultation
+                {submitting ? "Sending..." : "Schedule a Free Consultation"}
               </button>
             </form>
           )}
