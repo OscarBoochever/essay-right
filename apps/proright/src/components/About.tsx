@@ -66,6 +66,29 @@ export default function About() {
             </div>
 
             <div className="mt-8 pt-8 border-t border-navy/10">
+              <p className="text-navy/70 font-medium mb-3">
+                Selected Publications
+              </p>
+              <ul className="space-y-1.5">
+                <li className="text-navy/55 text-sm leading-relaxed">
+                  <a href="https://aisel.aisnet.org/misqe/vol19/iss1/6/" target="_blank" rel="noopener noreferrer" className="text-deep-blue hover:text-deep-blue-dark transition-colors">How to Avoid Enterprise Systems Landscape Complexity</a>, MIS Quarterly Executive, 2020
+                </li>
+                <li className="text-navy/55 text-sm leading-relaxed">
+                  <a href="https://www.oliverwyman.com/our-expertise/insights/2017/apr/how-to-avoid-the-next-legacy-IT-platform-debacle.html" target="_blank" rel="noopener noreferrer" className="text-deep-blue hover:text-deep-blue-dark transition-colors">So You Want To Go Digital?</a>, Oliver Wyman, 2017
+                </li>
+                <li className="text-navy/55 text-sm leading-relaxed">
+                  <a href="https://www.oliverwyman.com/our-expertise/insights/2014/nov/organizing-for-effectiveness-and-growth-in-cooperative-financial.html" target="_blank" rel="noopener noreferrer" className="text-deep-blue hover:text-deep-blue-dark transition-colors">Organizing for Effectiveness and Growth in Cooperative Financial Services</a>, Oliver Wyman, 2014
+                </li>
+                <li className="text-navy/55 text-sm leading-relaxed">
+                  <a href="https://books.google.com/books?id=hwoAAAAAMBAJ&pg=PA64&dq=john+boochever" target="_blank" rel="noopener noreferrer" className="text-deep-blue hover:text-deep-blue-dark transition-colors">IT Value Methodologies</a>, CIO Magazine, 2007
+                </li>
+                <li className="text-navy/55 text-sm leading-relaxed">
+                  <a href="https://muse.jhu.edu/article/173531" target="_blank" rel="noopener noreferrer" className="text-deep-blue hover:text-deep-blue-dark transition-colors">The Treasurer&apos;s New Clothes</a>, Johns Hopkins University Press, 2004
+                </li>
+              </ul>
+            </div>
+
+            <div className="mt-8 pt-8 border-t border-navy/10">
               <p className="font-serif italic text-navy/50 text-lg">
                 &ldquo;The best professional writing doesn&apos;t sound
                 &apos;professional.&apos; It sounds like a clear thinker who
