@@ -7,7 +7,7 @@ export default function Footer() {
             Essay<span className="text-teal">Right</span>
           </span>
           <span className="text-sm">
-            &copy; {new Date().getFullYear()} EssayRight LLC
+            &copy; {new Date().getFullYear()} VoiceRight LLC
           </span>
         </div>
         <div className="flex items-center gap-6 text-sm">

@@ -7,7 +7,7 @@ export default function Footer() {
             Pro<span className="text-deep-blue">Right</span>
           </span>
           <span className="text-sm">
-            &copy; {new Date().getFullYear()} ProRight LLC
+            &copy; {new Date().getFullYear()} VoiceRight LLC
           </span>
         </div>
         <div className="flex items-center gap-6 text-sm">
