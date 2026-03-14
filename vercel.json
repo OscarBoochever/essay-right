@@ -1,6 +1,0 @@
-{
-  "buildCommand": "cd apps/essayright && npm run build",
-  "installCommand": "npm install",
-  "outputDirectory": "apps/essayright/.next",
-  "framework": "nextjs"
-}
