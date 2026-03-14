@@ -5,7 +5,7 @@ import { useState } from "react";
 const links = [
   { href: "#about-proright", label: "Why Us" },
   { href: "#services", label: "Services" },
-  { href: "#method", label: "The Method" },
+  { href: "#method", label: "How It Works" },
   { href: "#who-we-help", label: "Who We Help" },
   { href: "#john", label: "About John" },
   { href: "#testimonials", label: "Testimonials" },
@@ -17,7 +17,7 @@ export default function Nav() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-cream/80 backdrop-blur-md border-b border-navy/5">
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-        <a href="#" className="font-serif text-xl font-bold text-navy">
+        <a href="#" className="font-serif text-2xl font-bold text-navy tracking-tight">
           Pro<span className="text-deep-blue">Right</span>
         </a>
 

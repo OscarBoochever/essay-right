@@ -157,8 +157,8 @@ export default function Contact() {
                   <option value="Reports & Deliverables">Reports & Deliverables</option>
                   <option value="Presentations & Speeches">Presentations & Speeches</option>
                   <option value="Published Works">Published Works</option>
-                  <option value="Career Narratives">Career Narratives</option>
-                  <option value="Strategic Communication Coaching">Strategic Communication Coaching</option>
+                  <option value="Career Strategy">Career Strategy</option>
+                  <option value="Communication Coaching">Communication Coaching</option>
                   <option value="Other">Other</option>
                 </select>
               </div>

@@ -1,23 +1,5 @@
 const audiences = [
   {
-    title: "Career Escalation",
-    items: [
-      "Executive communications & board materials",
-      "Thought leadership articles",
-      "Conference presentations",
-      "Internal strategy documents",
-    ],
-  },
-  {
-    title: "Career Pivots",
-    items: [
-      "Positioning narratives for new industries",
-      "Executive bios & LinkedIn overhaul",
-      "Cover letters that reframe experience",
-      "Interview preparation materials",
-    ],
-  },
-  {
     title: "Private Sector Leaders",
     items: [
       "Client-facing deliverables",
@@ -57,7 +39,7 @@ export default function WhoWeHelp() {
           From early-career professionals to C-suite executives, ProRight works
           with people whose writing shapes their reputation.
         </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {audiences.map((audience) => (
             <div
               key={audience.title}

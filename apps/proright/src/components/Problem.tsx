@@ -20,8 +20,8 @@ const problems = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 18.364A9 9 0 0 0 5.636 5.636m12.728 12.728A9 9 0 0 1 5.636 5.636m12.728 12.728L5.636 5.636" />
       </svg>
     ),
-    iconColor: "text-amber",
-    iconBg: "bg-light-amber",
+    iconColor: "text-[#B22234]",
+    iconBg: "bg-[#FDECEA]",
   },
   {
     title: "ProRight is the advantage",
@@ -34,6 +34,29 @@ const problems = [
     ),
     iconColor: "text-deep-blue",
     iconBg: "bg-light-blue",
+  },
+];
+
+const principles = [
+  {
+    title: "Write for busy readers",
+    description:
+      "Your audience has five minutes. Respect that. Structure ideas so the point lands immediately and the details reward a closer read.",
+  },
+  {
+    title: "Sound like yourself",
+    description:
+      "AI-generated prose is fluent and forgettable. The goal is writing with a point of view, with specificity, with the texture of someone who actually knows what they are talking about.",
+  },
+  {
+    title: "Give people a reason to read",
+    description:
+      "If writing sounds like AI, readers treat it like AI: skim it, summarize it, delegate it to their own machine. Writing that carries a real voice earns real attention.",
+  },
+  {
+    title: "Cut through the noise",
+    description:
+      "Boilerplate, filler phrases, hedging that says nothing. It all tells the reader to stop paying attention. We strip it out so what remains is compelling, direct, and worth their time.",
   },
 ];
 
@@ -67,6 +90,24 @@ export default function Problem() {
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-16 pt-12 border-t border-navy/10">
+          <h3 className="font-serif text-2xl font-bold text-navy text-center mb-12">
+            The philosophy
+          </h3>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {principles.map((principle) => (
+              <div key={principle.title}>
+                <h4 className="font-serif text-lg font-semibold text-navy mb-2">
+                  {principle.title}
+                </h4>
+                <p className="text-navy/55 leading-relaxed text-sm">
+                  {principle.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
