@@ -7,7 +7,6 @@ const audiences = [
       "Essays & school assignments",
       "Finding a confident voice early",
     ],
-    accent: "bg-coral",
   },
   {
     title: "High School Students",
@@ -17,7 +16,6 @@ const audiences = [
       "Personal statements",
       "AP & IB extended essays",
     ],
-    accent: "bg-teal",
   },
   {
     title: "College Students",
@@ -27,7 +25,6 @@ const audiences = [
       "Fellowship applications",
       "Internship essays",
     ],
-    accent: "bg-coral",
   },
   {
     title: "Graduate Students",
@@ -37,7 +34,6 @@ const audiences = [
       "Grant proposals",
       "Academic articles",
     ],
-    accent: "bg-gold",
   },
   {
     title: "International Students",
@@ -47,7 +43,6 @@ const audiences = [
       "Clarity of argument",
       "Cultural tone & style",
     ],
-    accent: "bg-navy",
   },
 ];
 

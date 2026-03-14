@@ -139,8 +139,10 @@ export default function Contact() {
                   <option value="" disabled>
                     Select a service...
                   </option>
-                  <option value="Applications">Applications</option>
-                  <option value="Academic Writing">Academic Writing</option>
+                  <option value="Admissions Essays">Admissions Essays</option>
+                  <option value="School Assignments">School Assignments</option>
+                  <option value="Research & Theses">Research & Theses</option>
+                  <option value="Internship & Job Applications">Internship & Job Applications</option>
                   <option value="Writing Coaching">Writing Coaching</option>
                   <option value="Other">Other</option>
                 </select>
