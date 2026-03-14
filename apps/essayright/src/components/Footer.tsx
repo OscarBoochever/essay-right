@@ -21,8 +21,8 @@ export default function Footer() {
           <span className="text-white/20">|</span>
           <span>
             For professionals:{" "}
-            <a href="https://voiceright.org" className="text-white/60 hover:text-teal transition-colors">
-              VoiceRight
+            <a href="https://proright.org" className="text-white/60 hover:text-teal transition-colors">
+              ProRight
             </a>
           </span>
         </div>

@@ -3,7 +3,7 @@ export default function Testimonials() {
     <section id="testimonials" className="py-20 md:py-28 px-6 bg-light-teal">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-4">
-          What People Are Saying
+          What Families Are Saying
         </h2>
         <p className="text-navy/50 mb-16 text-lg">
           Testimonials coming soon.

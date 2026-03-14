@@ -3,7 +3,7 @@ export default function Home() {
     <main className="min-h-screen flex items-center justify-center px-6">
       <div className="max-w-2xl text-center">
         <h1 className="font-serif text-5xl md:text-7xl font-bold text-navy leading-tight tracking-tight mb-6">
-          Voice<span className="text-deep-blue">Right</span>
+          Pro<span className="text-deep-blue">Right</span>
         </h1>
         <p className="text-xl md:text-2xl text-navy/60 mb-8 leading-relaxed">
           Professional writing. Strategic voice. Real impact.

@@ -74,11 +74,6 @@ export default function About() {
                 credit for the essays.
               </p>
               <p>
-                Beyond his own family, John has helped two generations of young
-                management consultants become better business writers, and has
-                coached applicants for fellowships, grants, and board roles.
-              </p>
-              <p>
                 He holds advanced degrees from the Johns Hopkins School of
                 Advanced International Studies (SAIS) and the University of
                 Chicago Booth School of Business, and did his undergraduate work
