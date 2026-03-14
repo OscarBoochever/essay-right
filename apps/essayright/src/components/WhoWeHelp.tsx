@@ -41,7 +41,7 @@ const audiences = [
       "English academic voice",
       "Admissions essays",
       "Clarity of argument",
-      "Cultural tone & style",
+      "Guided by someone who lived it",
     ],
   },
 ];

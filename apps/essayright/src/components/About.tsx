@@ -31,53 +31,40 @@ export default function About() {
 
             <div className="space-y-5 text-navy/70 leading-relaxed">
               <p>
-                John Boochever has spent more than three decades helping leaders
-                and organizations communicate complex ideas clearly and
-                persuasively. He brings that same rigor, and genuine love of
-                good writing, to helping students find their voice.
+                John Boochever has spent more than three decades writing for a
+                living. As a partner at Oliver Wyman and Booz Allen Hamilton,
+                clear, persuasive writing was the job: pitching strategies to
+                executives, translating complex ideas into language that moved
+                people to action. He brings that same discipline, and genuine
+                love of good writing, to helping students find their voice.
               </p>
               <p>
-                Professionally, John was a partner at two of the world&apos;s leading
-                consulting firms. At Oliver Wyman, he was a founding partner and
-                global head of the firm&apos;s Digital and Technology Strategy
-                practice. Earlier, at Booz Allen Hamilton, he led the
-                Information Systems business across Europe and the Middle East
-                and served on both firms&apos; management committees. In recent
-                years, he has advised minority- and women-owned consulting firms
-                and education-focused enterprises on business development and
-                institutional growth.
+                Born in Luxembourg and educated at international and European
+                schools before attending public high school in the U.S., John
+                has spent 22 years abroad, with professional experience spanning
+                17 countries across six continents. He has advanced proficiency
+                in French and basic comprehension in Spanish, Dutch, German, and
+                Italian. That firsthand experience navigating languages,
+                cultures, and academic systems gives him a unique ability to help
+                international students find their voice in English.
               </p>
               <p>
-                John has a long and deep relationship with the Smithsonian
-                Institution. He chairs the Center for Folklife and Cultural
-                Heritage, which includes Smithsonian Folkways Recordings, and is
-                a Commissioner Emeritus of the National Portrait Gallery, where
-                he served as Vice Chair. His family endowed and continues to
-                sustain the Smithsonian&apos;s triennial Outwin Boochever Portrait
-                Competition, now a cornerstone of contemporary portraiture in
-                America.
+                John has been editing his three children&apos;s writing since
+                grade school. Between them, they have collected one PhD, four
+                master&apos;s degrees, and three bachelor&apos;s degrees across
+                Cornell, Harvard, UC Davis, the University of Vermont, and
+                Lipscomb University. He takes partial credit for the essays.
               </p>
               <p>
-                His governance experience extends to higher education and
-                nonprofits: he previously served as an elected trustee of Cornell
-                University and continues to serve on the Advisory Council of
-                Cornell&apos;s College of Arts & Sciences. His board service has
-                included Higher Achievement, Sidwell Friends School, and other
-                educational organizations.
-              </p>
-              <p>
-                On a more personal note: John has been editing his three
-                children&apos;s writing since grade school. Between them, they have
-                collected one PhD, four master&apos;s degrees, and three
-                bachelor&apos;s degrees across Cornell, Harvard, UC Davis, the
-                University of Vermont, and Lipscomb University. He takes partial
-                credit for the essays.
-              </p>
-              <p>
-                He holds advanced degrees from the Johns Hopkins School of
-                Advanced International Studies (SAIS) and the University of
-                Chicago Booth School of Business, and did his undergraduate work
-                at Cornell University, where he graduated with distinction.
+                John is also a guest lecturer at Washington College and a
+                mentor at Higher Achievement, working directly with students on
+                writing and communication skills. He chairs the
+                Smithsonian&apos;s Center for Folklife and Cultural Heritage, is
+                a Commissioner Emeritus of the National Portrait Gallery, and
+                has served as an elected trustee of Cornell University. He holds
+                advanced degrees from Johns Hopkins SAIS and the University of
+                Chicago Booth School of Business, and graduated with distinction
+                from Cornell.
               </p>
             </div>
 
