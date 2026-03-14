@@ -83,7 +83,7 @@ export default function Services() {
             </div>
           ))}
         </div>
-        <div className="flex justify-center gap-6 mt-6 max-w-5xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-center gap-6 mt-6 max-w-5xl mx-auto">
           {bottomRow.map((service) => (
             <div
               key={service.title}
